@@ -16,7 +16,7 @@
 					<td> <input name='age' class="short_input"> </td>
 				</tr>
 				<tr>
-					<td> <label> Sex </label></td>
+					<td> <label> Gender </label></td>
 					<td> <label> <input type="radio" class = "radio_button" name="gender" value="1">  Male </label> <label> <input type="radio" class = "radio_button" name="gender" value="2"> Female  </label> </td>
 				</tr>
 				<tr>
@@ -46,9 +46,9 @@
 				<tr>
 					<td> <label> Resting ECG </label></td>
 					<td> 
-						<label><input type="radio" class = "radio_button" name="chest_pain" value="0"> Normal </label> <br>
-						<label><input type="radio" class = "radio_button" name="chest_pain" value="1"> Having ST-T Wave Abnormality </label> <br>
-						<label><input type="radio" class = "radio_button" name="chest_pain" value="2"> Left Ventricular Hyperthrophy </label> <br>
+						<label><input type="radio" class = "radio_button" name="resting_ecg" value="0"> Normal </label> <br>
+						<label><input type="radio" class = "radio_button" name="resting_ecg" value="1"> Having ST-T Wave Abnormality </label> <br>
+						<label><input type="radio" class = "radio_button" name="resting_ecg" value="2"> Left Ventricular Hyperthrophy </label> <br>
 					</td>
 				</tr>
 				<tr>
