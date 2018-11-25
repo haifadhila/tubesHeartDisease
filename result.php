@@ -26,6 +26,15 @@
 	$response['datatest'] = $datatest;
 	$fp = fopen('datatest.json', 'w');
 	fwrite($fp, json_encode($response));
-	fclose($fp);	
+	fclose($fp);
 
+	$command = escapeshellcmd('main.py');
+	$output = shell_exec($command);
+	if ($output == 0) {
+		$statement = "You're not diagnosed with heart disease.";
+	} else {
+		$statement = "Sorry, you're diagnosed with heart disease level " . $output . ".";
+	}
+	echo "<h1 class='result'>" . $statement . "</h1>"
 ?>
+

@@ -41,3 +41,10 @@ label {
 	width: 50px;
 	margin-right: 5px;
 }
+
+.result {
+	font-family: "Nunito";
+	font-size: 40pt;
+	text-align: center;
+	vertical-align: middle;
+}
