@@ -17,7 +17,7 @@
 				</tr>
 				<tr>
 					<td> <label> Gender </label></td>
-					<td> <label> <input type="radio" class = "radio_button" name="gender" value="1">  Male </label> <label> <input type="radio" class = "radio_button" name="gender" value="2"> Female  </label> </td>
+					<td> <label> <input type="radio" class = "radio_button" name="gender" value="1">  Male </label> <label> <input type="radio" class = "radio_button" name="gender" value="0"> Female  </label> </td>
 				</tr>
 				<tr>
 					<td> <label> Chest Pain Type </label></td>
