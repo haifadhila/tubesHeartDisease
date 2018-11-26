@@ -7,7 +7,7 @@
 		<h1 class="title"> Heart Disease Classification </h1>
 	</head>
 
-	<body>
+	<body class = a>
 	<div align='center'>
 		<form action='result.php' method='post' id="form_input">
 			<table>
@@ -21,7 +21,7 @@
 				</tr>
 				<tr>
 					<td> <label> Chest Pain Type </label></td>
-					<td> 
+					<td>
 						<label><input type="radio" class = "radio_button" name="chest_pain" value="1"> Typical Angina</label> <br>
 						<label><input type="radio" class = "radio_button" name="chest_pain" value="2"> Atypical Angina</label> <br>
 						<label><input type="radio" class = "radio_button" name="chest_pain" value="3"> Non-Anginal Pain </label> <br>
@@ -38,14 +38,14 @@
 				</tr>
 				<tr>
 					<td> <label> Fasting Blood Sugar <br> Level > 120 mg/dl</label></td>
-					<td> 
+					<td>
 						<label> <input type="radio" class = "radio_button" name="blood_sugar" value="0">  False </label> <br>
 						<label> <input type="radio" class = "radio_button" name="blood_sugar" value="1"> True  </label>
 					</td>
 				</tr>
 				<tr>
 					<td> <label> Resting ECG </label></td>
-					<td> 
+					<td>
 						<label><input type="radio" class = "radio_button" name="resting_ecg" value="0"> Normal </label> <br>
 						<label><input type="radio" class = "radio_button" name="resting_ecg" value="1"> Having ST-T Wave Abnormality </label> <br>
 						<label><input type="radio" class = "radio_button" name="resting_ecg" value="2"> Left Ventricular Hyperthrophy </label> <br>
@@ -57,7 +57,7 @@
 				</tr>
 				<tr>
 					<td> <label> Exercise Induced Angina</label></td>
-					<td> 
+					<td>
 						<label> <input type="radio" class = "radio_button" name="angina" value="0">  No </label> <br>
 						<label> <input type="radio" class = "radio_button" name="angina" value="1"> Yes  </label>
 					</td>
@@ -68,7 +68,7 @@
 				</tr>
 				<tr>
 					<td> <label> Peak Exercise ST Segment </label></td>
-					<td> 
+					<td>
 						<label><input type="radio" class = "radio_button" name="st_segment" value="1"> Upsloping </label> <br>
 						<label><input type="radio" class = "radio_button" name="st_segment" value="2"> Flat </label> <br>
 						<label><input type="radio" class = "radio_button" name="st_segment" value="3"> Downsloping </label>
@@ -76,7 +76,7 @@
 				</tr>
 				<tr>
 					<td> <label> Number of Major Vessels <br> Colored by Flourosopy </label></td>
-					<td> 
+					<td>
 						<label><input type="radio" class = "radio_button" name="vessels_number" value="0"> 0 </label> <br>
 						<label><input type="radio" class = "radio_button" name="vessels_number" value="1"> 1 </label> <br>
 						<label><input type="radio" class = "radio_button" name="vessels_number" value="2"> 2 </label> <br>
@@ -85,7 +85,7 @@
 				</tr>
 				<tr>
 					<td> <label> Thal </label></td>
-					<td> 
+					<td>
 						<label><input type="radio" class = "radio_button" name="thal" value="3"> Normal </label> <br>
 						<label><input type="radio" class = "radio_button" name="thal" value="6"> Fixed Defect </label> <br>
 						<label><input type="radio" class = "radio_button" name="thal" value="7"> Reversable Defect </label>

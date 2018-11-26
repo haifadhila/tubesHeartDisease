@@ -1,5 +1,6 @@
 .title {
-	color: blue;
+	background-color: darkblue;
+	color: white;
 	text-align: center;
 	font-family: "Nunito";
 }
@@ -15,14 +16,26 @@ td {
 
 .submit_button {
  	font-family: "Nunito";
- 	font-size: 15pt;
+ 	font-size: 20pt;
  	color: white;
- 	background-color: #00AEEF;
+ 	background-color: darkblue;
  	border: none;
  	border-radius: 7px;
  	padding: 5px;
-	padding-left: 20px;
-	padding-right: 20px;
+	padding-left: 30px;
+	padding-right: 30px;
+}
+
+.submit_button:hover {
+ 	font-family: "Nunito";
+ 	font-size: 20pt;
+ 	color: white;
+ 	background-color: #3E9FB7;
+ 	border: none;
+ 	border-radius: 7px;
+ 	padding: 5px;
+	padding-left: 30px;
+	padding-right: 30px;
 }
 
 .radio_button {
@@ -40,6 +53,13 @@ label {
 	padding: 5px;
 	width: 50px;
 	margin-right: 5px;
+}
+
+.a{
+	border: 3px dotted darkblue;
+	padding: 15px;
+	background: lightblue;
+	background-clip: border-box;
 }
 
 .result {
