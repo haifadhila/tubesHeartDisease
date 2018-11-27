@@ -62,9 +62,20 @@ label {
 	background-clip: border-box;
 }
 
-.result {
+.resultno {
 	font-family: "Nunito";
 	font-size: 40pt;
 	text-align: center;
 	vertical-align: middle;
+	border-style: solid;
+    border-color: green;
+}
+
+.resultyes {
+	font-family: "Nunito";
+	font-size: 40pt;
+	text-align: center;
+	vertical-align: middle;
+	border-style: solid;
+    border-color: red; 
 }

@@ -31,10 +31,12 @@
 	$command = escapeshellcmd('main.py');
 	$output = shell_exec($command);
 	if ($output == 0) {
-		$statement = "You're not diagnosed with heart disease.";
+		$statement1 = "You're not diagnosed with heart disease.";
+		echo "<h1 class='resultno'>" . $statement1 . "</h1>";
 	} else {
-		$statement = "Sorry, you're diagnosed with heart disease level " . $output . ".";
+		$statement2 = "Sorry, you're diagnosed with heart disease level " . $output . ".";
+		echo "<h1 class='resultyes'>" . $statement2 . "</h1>";
 	}
-	echo "<h1 class='result'>" . $statement . "</h1>"
+	
 ?>
 
