@@ -1,1 +1,1 @@
-{"datatest":{"age":"54","gender":"1","chest_pain":"4","blood_pressure":"130","colestrol":"242","blood_sugar":"0","resting_ecg":"0","heart_rate":"91","angina":"1","st_depression":"1","st_segment":"2","vessels_number":"1","thal":"6"}}
+{"datatest":{"age":"100","gender":"1","chest_pain":"3","blood_pressure":"400","colestrol":"400","blood_sugar":"0","resting_ecg":"1","heart_rate":"400","angina":"0","st_depression":"5","st_segment":"3","vessels_number":"0","thal":"3"}}

@@ -14,7 +14,7 @@ if __name__ == "__main__":
 		writer.writerow(add_csv)
 
 	model = joblib.load("model.joblib")
-	test_data = pd.read_csv('tubes2_HeartDisease_test.csv')
+	test_data = pd.read_csv(r'tubes2_HeartDisease_test.csv')
 	test_data.replace({'?' : None, 'None' : None}, inplace=True)
 	test_data['Column4'].fillna(value = test_data['Column4'].median(),inplace=True)
 	test_data['Column5'].fillna(value = test_data['Column5'].median(),inplace=True)
