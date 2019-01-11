@@ -1,0 +1,81 @@
+.title {
+	background-color: darkblue;
+	color: white;
+	text-align: center;
+	font-family: "Nunito";
+}
+
+table {
+	border-collapse: separate;
+	border-spacing: 50px 0;
+}
+
+td {
+  padding: 10px 0;
+}
+
+.submit_button {
+ 	font-family: "Nunito";
+ 	font-size: 20pt;
+ 	color: white;
+ 	background-color: darkblue;
+ 	border: none;
+ 	border-radius: 7px;
+ 	padding: 5px;
+	padding-left: 30px;
+	padding-right: 30px;
+}
+
+.submit_button:hover {
+ 	font-family: "Nunito";
+ 	font-size: 20pt;
+ 	color: white;
+ 	background-color: #3E9FB7;
+ 	border: none;
+ 	border-radius: 7px;
+ 	padding: 5px;
+	padding-left: 30px;
+	padding-right: 30px;
+}
+
+.radio_button {
+
+	width: 20px;
+	height: 20px;
+	font-family: "Nunito";
+}
+
+label {
+	font-family: Nunito;
+	font-size: 15pt;
+}
+.short_input{
+	padding: 5px;
+	width: 50px;
+	margin-right: 5px;
+}
+
+.a{
+	border: 3px dotted darkblue;
+	padding: 15px;
+	background: lightblue;
+	background-clip: border-box;
+}
+
+.resultno {
+	font-family: "Nunito";
+	font-size: 40pt;
+	text-align: center;
+	vertical-align: middle;
+	border-style: solid;
+    border-color: green;
+}
+
+.resultyes {
+	font-family: "Nunito";
+	font-size: 40pt;
+	text-align: center;
+	vertical-align: middle;
+	border-style: solid;
+    border-color: red; 
+}

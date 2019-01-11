@@ -3,31 +3,47 @@ import json
 import sklearn.externals
 from sklearn.externals import joblib
 import pandas as pd
+from flask import Flask
+from flask import render_template, url_for, request
 
-if __name__ == "__main__":
+app = Flask(__name__)
+
+@app.route("/")
+def web():
+	return render_template('web.php')
+
+@app.route("/result.php", methods=['GET', 'POST'])
+def result():
+	if request.method=='POST':
+		age= request.form['age']
+		gender = request.form['gender']
+		chest_pain= request.form['chest_pain']
+		blood_pressure= request.form['blood_pressure']
+		colestrol= request.form['colestrol']
+		blood_sugar= request.form['blood_sugar']
+		resting_ecg= request.form['resting_ecg']
+		heart_rate= request.form['heart_rate']
+		angina= request.form['angina']
+		st_depression= request.form['st_depression']
+		st_segment= request.form['st_segment']
+		vessels_number= request.form['vessels_number']
+		thal= request.form['thal']
 	open_datatest = json.load(open('datatest.json'))
 	datatest = open_datatest["datatest"]
-
-	add_csv = [datatest["age"], datatest["gender"], datatest["chest_pain"], datatest["blood_pressure"], datatest["colestrol"], datatest["blood_sugar"], datatest["resting_ecg"], datatest["heart_rate"], datatest["angina"], datatest["st_depression"], datatest["st_segment"], datatest["vessels_number"], datatest["thal"]]
-	with open ('tubes2_HeartDisease_test.csv', 'a') as f:
-		writer = csv.writer(f)
-		writer.writerow(add_csv)
-
+	datatest_csv = [age,gender,chest_pain,blood_pressure,colestrol,blood_sugar,resting_ecg,heart_rate,angina,st_depression]
+	print(datatest_csv)
+	# datatest_csv = datatest_csv.drop(["Column12","Column13"], axis=1)
 	model = joblib.load("model.joblib")
-	test_data = pd.read_csv(r'tubes2_HeartDisease_test.csv')
-	test_data.replace({'?' : None, 'None' : None}, inplace=True)
-	test_data['Column4'].fillna(value = test_data['Column4'].median(),inplace=True)
-	test_data['Column5'].fillna(value = test_data['Column5'].median(),inplace=True)
-	test_data['Column6'].fillna(value = test_data['Column6'].mode()[0],inplace=True)
-	test_data['Column7'].fillna(value = test_data['Column7'].mode()[0],inplace=True)
-	test_data['Column8'].fillna(value = test_data['Column8'].median(),inplace=True)
-	test_data['Column9'].fillna(value = test_data['Column9'].mode()[0],inplace=True)
-	test_data['Column10'].fillna(value = test_data['Column10'].median(),inplace=True)
-	test_data['Column11'].fillna(value = test_data['Column11'].mode()[0],inplace=True)
-	test_data_X = test_data.drop(["Column12","Column13"], axis=1)
+	prediction = model.predict([datatest_csv])
+	return render_template('result.php', value=prediction)
 
-	prediction = model.predict(test_data_X)
-	count=0;
-	for pre in prediction:
-		count+=1
-	print(prediction[count-1])
+# @app.route("/predict")
+# def predict():
+# 	do_predict = Result()
+# 	result = do_predict.getPrediction()
+# 	return json.dumps(result)
+
+if __name__ == "__main__":
+	app.debug = True
+	app.run()
+	app.run(debug = True)
